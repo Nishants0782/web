@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    width: 200px;
+    float:left;
+    /* border:2px solid black; */
+    background-color: white;
+    margin-left: 25px;
+    margin-top:15px;
+}
+ul{
+    background-color:white;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* border:2px solid black; */
+    height:80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+} 
+ul li{
+    float:left;
+    padding-left: 20px;
+    font-family: "Gotham", sans-serif;
+   
+}
+.active {
+   
+    margin-left: 30px;
+    
+}
+.box{
+    color: white;
+    float:right;
+    margin-right: 50px;
+    padding-left:  20px;
+    padding-right: 20px;
+    min-height:25px;
+    border:1px solid #0590c8;
+    margin-top: 26px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding-top:  7px;
+    font-family: "Gotham", sans-serif;
+    border-radius: 20px;
+    background-color: #0590c8;
+    
+} 
+/* div{
+    padding-right:  20px;
+    padding-left:  20px;
+    min-height:  50px;
+    border:2px solid black;
+} */
+
+.box1{
+    float:right;
+    margin-right:10px;
+    padding-right: 10px;
+} 
+
+
+ul li a{
+    display:block;
+    padding:35px 0px;
+    text-decoration: none; 
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+}
+#first{
+   width: 20px;
+   margin-top: 32px;
+}
+
+/* #row{
+   width:100%;
+   } */
+/* body{
+    width: 100%;
+    background-image: url("boston-dynamics-spot.jpg");
+    position: absolute;
+    top:
+}   
+     */
+#background-image{
+    background: url("boston-dynamics-spot.jpg");
+    width:100vw;
+    height:calc(100vh - 85px);
+    background-repeat: no-repeat;
+    position:relative;
+    top:83px;
+    background-size: 100% 100%;
+    
+}
+p{
+    color:white;
+    font-size:80px;
+    font-weight: 700px;
+    margin-left:100px;
+    padding-left: 50px;
+    font-family:Gotham,sans-serif;
+    position: absolute;
+    top:130px;
+    
+}
+#para{
+    color:white;
+    font-size:30px;
+    font-weight: 700px;
+    margin-left:100px;
+    padding-left:50px;
+    font-family:Gotham,sans-serif;
+    position: absolute;
+    top:400px;
+
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    ul {
+        padding: 0 10px;
+    }
+    
+    #logo {
+        width: 150px;
+        margin-left: 15px;
+    }
+    
+    ul li {
+        padding: 0 15px;
+    }
+    
+    .box, .box1 {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    
+    #background-image {
+        height: calc(100vh - 70px);
+        top: 70px;
+    }
+    
+    p {
+        font-size: 60px;
+        margin-left: 70px;
+    }
+    
+    #para {
+        font-size: 24px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    ul {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    ul li {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    #logo {
+        margin: 10px auto;
+        display: block;
+        width: 120px;
+    }
+    
+    .box, .box1 {
+        display: block;
+        margin: 10px auto;
+        padding: 5px 10px;
+    }
+    
+    #background-image {
+        height: calc(100vh - 60px);
+        top: 60px;
+    }
+    
+    p {
+        font-size: 50px;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    #para {
+        font-size: 20px;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    ul li {
+        padding: 8px 0;
+    }
+    
+    .box, .box1 {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    
+    #background-image {
+        height: calc(100vh - 50px);
+        top: 50px;
+    }
+    
+    p {
+        font-size: 40px;
+    }
+    
+    #para {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    ul {
+        padding: 0;
+    }
+    
+    ul li {
+        padding: 5px 0;
+    }
+    
+    .box, .box1 {
+        font-size: 8px;
+        padding: 5px 8px;
+    }
+    
+    #logo {
+        width: 100px;
+    }
+    
+    #background-image {
+        height: calc(100vh - 40px);
+        top: 40px;
+    }
+    
+    p {
+        font-size: 30px;
+    }
+    
+    #para {
+        font-size: 16px;
+    }
+}
